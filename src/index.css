@@ -1,8 +1,38 @@
+body {
+  background-image: url("https://apod.nasa.gov/apod/image/1411/NGC281_STXL11002_AOXPugh950.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 157%;
+}
+
 .title {
-  font-family: 'Lucida Sans';
+  font-family: 'Amatic SC', cursive;
+  font-size: 69px;
   text-align: center;
   color: white;
-  background-color:  rgb(40, 71, 156);
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+.input {
+  text-align: center;
+
+}
+
+::placeholder {
+  color: rgb(34, 30, 30);
+  font-family: 'Caveat';
+  font-size: 19px;
+  text-align: center;
+  height: 50px;
+}
+
+.listItems {
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+  text-align: center;
+}
+
+
