@@ -45,10 +45,9 @@ input:focus {
   font-family: 'Amatic SC', cursive;
   font-size: 2rem;
 }
-.li {
+/*.li {
   /*border-style: solid;*/
-}
-
+  
 .tab1 { 
   display: inline-block;
   margin-left: 7rem; 
