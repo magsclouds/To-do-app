@@ -1,38 +1,58 @@
+
 body {
-  background-image: url("https://apod.nasa.gov/apod/image/1411/NGC281_STXL11002_AOXPugh950.jpg");
-  background-repeat: no-repeat;
+  /*max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+  height: 700px;
+  /*background-color: rgb(139, 16, 16);
+  /*background-image: url("https://apod.nasa.gov/apod/image/1411/NGC281_STXL11002_AOXPugh950.jpg");*/
+  /*background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
-  background-size: 157%;
+  background-attachment: fixed;*/
+  margin:auto;
+  width:100%;
+  padding:3em;
+  background-color:#ebebeb;
+  /*font-size:14px;
+  font-family:Verdana;*/
 }
 
 .title {
   font-family: 'Amatic SC', cursive;
-  font-size: 69px;
-  text-align: center;
+  font-size: 5rem;
   color: white;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 .input {
-  text-align: center;
+  width: 100em;
+  /*border: 0px;*/
+  margin-left: 3em;
+}
 
+input:focus {
+  outline: none;
+  /*height: 50px;*/
 }
 
 ::placeholder {
-  color: rgb(34, 30, 30);
+  color: rgba(114, 110, 110, 0.856);
   font-family: 'Caveat';
-  font-size: 19px;
-  text-align: center;
-  height: 50px;
+  font-size: 20rem;
 }
 
 .listItems {
   color: white;
   font-family: 'Amatic SC', cursive;
-  font-size: 30px;
-  text-align: center;
+  font-size: 2rem;
 }
+.li {
+  /*border-style: solid;*/
+}
+
+.tab1 { 
+  display: inline-block;
+  margin-left: 7rem; 
+} 
+
 
 

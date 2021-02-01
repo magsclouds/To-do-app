@@ -5,7 +5,7 @@ export default class App extends React.Component {
     toDos: [],
     toDo: '',
   }
-    handleSubmit = event =>{
+    handleSubmit = event => {
       event.preventDefault()
       let {toDos, toDo} = this.state;
       toDos.push({text: toDo, line: 'none', opacity: 1});
@@ -26,7 +26,7 @@ export default class App extends React.Component {
       let arr = this.state.toDos
       if (arr[index].line === 'none'){
         arr[index].line = 'line-through'
-        arr[index].opacity = .5
+        arr[index].opacity = .3
         }else{
         arr[index].line = 'none'
         arr[index].opacity = 1
@@ -38,24 +38,25 @@ export default class App extends React.Component {
   
     return (
       <div className='mylist'>
-        <h1 className='title'>Maggie's Todos</h1>
+        <h1 className='title'>Lucy's Todooos!</h1>
 
           <div className='input'>
             <form onSubmit = {this.handleSubmit}>
               <input
-                size="69"
-                placeholder='enter todo'
+                size='50'
+                placeholder=' '
                 value={this.state.toDo}
                 onChange={this.handleChange}/>
             </form>
 
             <ol className='listItems'>
-              {this.state.toDos.map((toDo, i)=> <li 
+              {this.state.toDos.map((toDo, i)=>
+                <li
                 style={{textDecoration: toDo.line, opacity: toDo.opacity}}
                 key={i}>
-                <span onClick={()=>this.handleLine(i)}>{toDo.text}</span>
+                <span onClick={()=>this.handleLine(i)}>{toDo.text}<span className='tab1'></span></span>
                 <span onClick={()=>this.handleDelete(i)}>
-                ---<i className="fas fa-trash-alt"></i>
+                <i className="fas fa-trash-alt"></i>
                 </span></li>
               )}
             </ol>
